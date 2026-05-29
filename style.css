@@ -1,0 +1,133 @@
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+    display:flex;
+}
+
+.sidebar{
+    width:240px;
+    background:#111827;
+    height:100vh;
+    padding:20px;
+    position:fixed;
+}
+
+.sidebar h1{
+    color:#00d4ff;
+    margin-bottom:30px;
+}
+
+.sidebar button{
+    width:100%;
+    margin-bottom:15px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#1f2937;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.sidebar button:hover{
+    background:#00d4ff;
+    color:black;
+}
+
+.main-content{
+    margin-left:260px;
+    width:100%;
+    padding:30px;
+}
+
+.notification{
+    background:#00d4ff;
+    color:black;
+    padding:15px;
+    border-radius:10px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+.card{
+    background:#111827;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,212,255,0.15);
+}
+
+.card h3{
+    color:#00d4ff;
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.dashboard-actions{
+    margin-top:30px;
+}
+
+.dashboard-actions button{
+    padding:14px 22px;
+    border:none;
+    border-radius:10px;
+    background:#00d4ff;
+    margin-right:15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.section{
+    display:none;
+}
+
+.section.active{
+    display:block;
+}
+
+.plan-box, .methods, .withdraw-box{
+    background:#111827;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+textarea, input{
+    width:100%;
+    padding:14px;
+    border-radius:10px;
+    border:none;
+    margin-top:15px;
+    background:#1f2937;
+    color:white;
+}
+
+.admin-box{
+    display:none;
+    margin-top:20px;
+}
+
+.admin-box button, .withdraw-box button{
+    margin-top:15px;
+    padding:14px 20px;
+    border:none;
+    border-radius:10px;
+    background:#00d4ff;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+ul li{
+    margin:10px 0;
+}
